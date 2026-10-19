@@ -1,8 +1,4 @@
 
-
-import email
-
-
 class chatbook:
     def __init__(self):
         self.username = ''
