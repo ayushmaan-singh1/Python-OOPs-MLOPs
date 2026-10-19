@@ -25,7 +25,8 @@ class chatbook:
         user_pwd = input("Enter your password: ")
         if user_name == self.username and user_pwd == self.password:
             print(f"You've logged in successfully Welcome: {user_name}")
-            exit()
+            self.loggedin = True
+            
         elif user_name != self.username or user_pwd != self.password:
             print(f"You've entered wrong username or password try again")
             cont = input("Do you want to try again? y/n: ")
