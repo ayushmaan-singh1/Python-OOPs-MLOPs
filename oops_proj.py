@@ -1,10 +1,27 @@
 
+import re
+
+
 class chatbook:
+    __user_id = 1 # Static variable for the class
     def __init__(self):
+        self.id = chatbook.__user_id # Instance variable for the object
+        chatbook.__user_id += 1 # Incrementing the static variable for the class
+        self.name = "Default User" # Public attribute
+        self.__name = "Private User" # Private attribute
         self.username = ''
         self.password = ''
         self.loggedin = False
-        self.menu()
+        #self.menu()
+
+    @staticmethod
+    def get_id(): #self is not passed as a parameter because this method is static and does not require an instance of the class to be called
+        return chatbook.__user_id
+    
+    @staticmethod
+    def set_id(id):
+        chatbook.__user_id = id
+    
     def signup(self):
         email = input("Enter your email: ")
         pwd = input("Enter your password: ")
@@ -81,7 +98,11 @@ class chatbook:
             print("You've exited")
             exit()
 
-     
+     #getter and setter methods for private attribute __name
+    def get_name(self):
+        return self.__name
+    def set_name(self, name):
+        self.__name = name
 
 
-obj = chatbook()
+#obj = chatbook()
