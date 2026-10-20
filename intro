@@ -25,5 +25,5 @@
     > Why Inheritance is needed? (code resuibility, parent has no access to child class)
     > What gets inherited? - Constructor, Non private attributes, non private methods
     > Constructor overriding & method overriding
-    > Super keyword (can be use finside class, can not access variables/attributes, used only inside child class)
+    > Super keyword (can be use inside class, can not access variables/attributes, used only inside child class)
     > Tpes of inheritance - 1. Single Ingeritance | 2. Multilevel | 3. Hierarchial | 4. Multiple <Diamond Problem> | 5. Hybrid
